@@ -17,5 +17,14 @@ git push -u origin main
 
     //change directory to destination folder (target)
     jar -c -v -f machines.jar -e target/App . 
+    //run the jar file
     java -jar machines.jar
+
+    //run the programme without compiling
+    java -cp target App
     
+# Overriding and Overloading
+    Override used when child class contains the same method as parent class
+    requires @Override functionname()
+
+    Overloading can be used in any class -> same method/function name but differentiated by parameters/arguments being passed in
