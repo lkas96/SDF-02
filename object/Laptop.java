@@ -78,6 +78,26 @@ public class Laptop extends Computer {
     }
 
 
+    //OVERLOQADING EXAMPLE
+    //SAME FUNCTION BUT DIFFERENT COMPUTATION
+    //SAME METHOD NAME BUT DIFFERENT BECAUSE OF THE ARGUMENTS PASSED IN
+    //DIFFERENTIATED BY THE ARGUMENTS BEING PASSED IN
+    public int computerArithmatic(){
+        int a, b, sum;
+
+        a = 2;
+        b = 3;
+
+        sum = a + b;
+
+        return sum;
+    }
+
+    public int computerArithmatic(int a, int b){
+        int sum;
+        sum = a + b;
+        return sum;
+    }
     
     
 }

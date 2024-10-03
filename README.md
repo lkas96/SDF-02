@@ -16,7 +16,7 @@ git push -u origin main
     javac -d target --source-path . ./*.java object/*.java (list all the java files locations)
 
     //change directory to destination folder (target)
-    jar -c -v -f machines.jar -e target/App . 
+    jar -c -v -f machines.jar -e App . 
     //run the jar file
     java -jar machines.jar
 

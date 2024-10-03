@@ -5,6 +5,9 @@ import java.util.List;
 import object.Computer;
 import object.Desktop;
 import object.Laptop;
+import vehicle.Car;
+import vehicle.Truck;
+import vehicle.Vehicle;
 
 public class App {
 
@@ -72,9 +75,36 @@ public class App {
 
         System.out.println("List of computers available: ");
         for (int i = 0; i < machines.size(); i++) {
-            System.out.println(machines.get(i));
-            System.out.println("");
+            System.out.println("Machine " + i );
+            machines.get(i).getSpecs();
+            System.out.println("---------------");
+        }
+        
+        System.out.println("");
+        System.out.println("");
+
+
+
+        List<Vehicle> vehicles = new ArrayList<>();
+        vehicles.add(new Vehicle("X series", "TESLA", "2020"));
+        vehicles.add(new Car("Classic Sedan 100", "BMW", "2004","Sedan", 5));
+        vehicles.add(new Truck("Rivian","2030 Trucker", "2030", 500.05));
+
+        for (Vehicle v : vehicles){
+            whatIsMyType(v);
         }
 
     }
+
+    //SLIDE 14 INSTANCE OF 
+    public static void whatIsMyType(Object obj){
+        if (obj instanceof Car){
+            System.out.println("This is a car lor");
+        } else if (obj instanceof Truck){
+            System.out.println("This is a truck lah");
+        } else {
+            System.out.println("This is just a basic vehicle deyy");
+        }
+    }
+
 }
