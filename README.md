@@ -28,3 +28,13 @@ git push -u origin main
     requires @Override functionname()
 
     Overloading can be used in any class -> same method/function name but differentiated by parameters/arguments being passed in
+
+# Interface
+    Interface are like common methods between the child/parent classes
+    Child classes extends parents
+    Writing the functions in parent classes into a separate interface
+    Main.java -> IMain.java (where the interfaces methods resides)
+    Just contains
+        public void function(arguments passing in);
+        Generate them automatically
+        In the child classes
